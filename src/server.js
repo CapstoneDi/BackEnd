@@ -4,23 +4,23 @@ import Hapi from '@hapi/hapi';
 import Jwt from '@hapi/jwt';
 
 // users
-import users from './api/users.js';
+import users from './api/users';
 import UsersService from './services/UsersService.js';
 import UsersValidator from './validator/users.js';
 
 // authentications
-import login from './api/login.js';
+import login from './api/login';
 import AuthenticationsService from './services/AuthenticationsService.js';
 import TokenManager from './tokenize/TokenManager.js';
 import LoginValidator from './validator/login.js';
 
 // collaborations
-import collaborations from './api/collaborations.js';
+import collaborations from './api/collaborations';
 import CollaborationsService from './services/CollaborationsService.js';
 import CollaborationsValidator from './validator/collaborations.js';
 
 // dokter
-import dokter from './api/dokter.js';
+import dokter from './api/dokter';
 import DokterService from './services/DokterService.js';
 import DokterValidator from './validator/dokter.js';
 
