@@ -1,5 +1,5 @@
 import InvariantError from '../../exceptions/InvariantError.js';
-import { DokterPayloadSchema } from './schema';
+import { DokterPayloadSchema } from './schema.js';
 
 const DokterValidator = {
 

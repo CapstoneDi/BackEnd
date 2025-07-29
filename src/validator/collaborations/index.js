@@ -1,5 +1,5 @@
 import InvariantError from '../../exceptions/InvariantError.js';
-import { collaborationsPayloadSchema } from './schema';
+import { collaborationsPayloadSchema } from './schema.js';
 
 const collaborationsValidator = {
   validateCollaborationsPayload: (payload) => {
