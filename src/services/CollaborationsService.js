@@ -1,7 +1,7 @@
 /* eslint-disable no-trailing-spaces */
-const { Pool } = require('pg');
-const { nanoid } = require('nanoid');
-const InvariantError = require('../exceptions/InvariantError');
+import { Pool } from 'pg';
+import { nanoid } from 'nanoid';
+import InvariantError from '../exceptions/InvariantError.js';
  
 class CollaborationsService {
   constructor() {

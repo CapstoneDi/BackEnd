@@ -1,5 +1,5 @@
-const CollaborationsHandler = require('./handler');
-const routes = require('./routes');
+import CollaborationsHandler from './handler.js';
+import routes from './routes.js';
 
 module.exports = {
   name: 'collaborations',

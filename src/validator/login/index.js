@@ -1,9 +1,9 @@
-const {
+import {
   PostAuthenticationPayloadSchema,
   PutAuthenticationPayloadSchema,
   DeleteAuthenticationPayloadSchema,
-} = require('./schema');
-const InvariantError = require('../../exceptions/InvariantError');
+} from './schema.js';
+import InvariantError from '../../exceptions/InvariantError.js';
 
 const AuthenticationsValidator = {
   validatePostAuthenticationPayload: (payload) => {

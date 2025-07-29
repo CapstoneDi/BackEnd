@@ -1,4 +1,4 @@
-const Joi = require('joi');
+import Joi from 'joi';
 
 const PostAuthenticationPayloadSchema = Joi.object({
   email: Joi.string().required(),

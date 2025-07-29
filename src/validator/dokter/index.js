@@ -1,5 +1,5 @@
-const InvariantError = require('../../exceptions/InvariantError');
-const { DokterPayloadSchema } = require('./schema');
+import InvariantError from '../../exceptions/InvariantError';
+import { DokterPayloadSchema } from './schema';
 
 const DokterValidator = {
 

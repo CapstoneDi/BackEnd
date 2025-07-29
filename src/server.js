@@ -1,28 +1,28 @@
-require('dotenv').config();
+import 'dotenv/config';
 
-const Hapi = require('@hapi/hapi');
-const Jwt = require('@hapi/jwt');
+import Hapi from '@hapi/hapi';
+import Jwt from '@hapi/jwt';
 
 // users
-const users = require('./api/users');
-const UsersService = require('./services/UsersService');
-const UsersValidator = require('./validator/users');
+import users from './api/users.js';
+import UsersService from './services/UsersService.js';
+import UsersValidator from './validator/users.js';
 
 // authentications
-const login = require('./api/login');
-const AuthenticationsService = require('./services/AuthenticationsService');
-const TokenManager = require('./tokenize/TokenManager');
-const LoginValidator = require('./validator/login');
+import login from './api/login.js';
+import AuthenticationsService from './services/AuthenticationsService.js';
+import TokenManager from './tokenize/TokenManager.js';
+import LoginValidator from './validator/login.js';
 
 // collaborations
-const collaborations = require('./api/collaborations');
-const CollaborationsService = require('./services/CollaborationsService');
-const CollaborationsValidator = require('./validator/collaborations');
+import collaborations from './api/collaborations.js';
+import CollaborationsService from './services/CollaborationsService.js';
+import CollaborationsValidator from './validator/collaborations.js';
 
 // dokter
-const dokter = require('./api/dokter');
-const DokterService = require('./services/DokterService');
-const DokterValidator = require('./validator/dokter');
+import dokter from './api/dokter.js';
+import DokterService from './services/DokterService.js';
+import DokterValidator from './validator/dokter.js';
 
 const init = async () => {
   const usersService = new UsersService();

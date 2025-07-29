@@ -1,7 +1,6 @@
-const { nanoid } = require('nanoid');
-const { Pool } = require('pg');
-const NotFoundError = require('../exceptions/NotFoundError');
-const { date } = require('joi');
+import { nanoid } from 'nanoid';
+import { Pool } from 'pg';
+import NotFoundError from '../exceptions/NotFoundError';
 
 class DokterService {
   constructor() {

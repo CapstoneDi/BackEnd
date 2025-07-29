@@ -1,5 +1,5 @@
-const UsersHandler = require('./handler');
-const routes = require('./routes');
+import UsersHandler from './handler.js';
+import routes from './routes.js';
 
 module.exports = {
   name: 'users',

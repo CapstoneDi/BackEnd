@@ -1,4 +1,4 @@
-const ClientError = require('../../exceptions/ClientError');
+import ClientError from '../../exceptions/ClientError';
 
 class UsersHandler {
   constructor(service, validator) {
