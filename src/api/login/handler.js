@@ -1,5 +1,5 @@
 /* eslint-disable no-trailing-spaces */
-import ClientError from '../../exceptions/ClientError';
+import ClientError from '../../exceptions/ClientError.js';
  
 class LoginHandler {
   constructor(authenticationsService, usersService, tokenManager, validator) {

@@ -1,4 +1,4 @@
-import ClientError from '../../exceptions/ClientError';
+import ClientError from '../../exceptions/ClientError.js';
 
 class UsersHandler {
   constructor(service, validator) {
