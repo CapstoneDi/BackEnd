@@ -4,9 +4,6 @@ const routes = (handler) => [
     path: '/register',
     options: {
       auth: false,
-      cors: {
-        origin: ['*'],
-      },
       handler: handler.postUserHandler,
     },
   },
@@ -15,9 +12,6 @@ const routes = (handler) => [
     path: '/users/me',
     options: {
       auth: 'jagasehatapp_jwt',
-      cors: {
-        origin: ['*'],
-      },
       handler: handler.getUserByIdHandler,
     },
   }

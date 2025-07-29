@@ -4,10 +4,7 @@ const routes = (handler) => [
     path: '/collaborations',
     handler: handler.postCollaborationsHandler,
     options: {
-      auth: 'jagasehatapp_jwt',
-      cors: {
-        origin: ['*'],
-      }
+      auth: 'jagasehatapp_jwt'
     },
   },
 ];

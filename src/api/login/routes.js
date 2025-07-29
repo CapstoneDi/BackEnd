@@ -4,9 +4,6 @@ const routes = (handler) => [
     path: '/login',
     options: {
       auth: 'jagasehatapp_jwt',
-      cors: {
-        origin: ['*'],
-      },
       handler: handler.postLoginHandler,
     },
   },
