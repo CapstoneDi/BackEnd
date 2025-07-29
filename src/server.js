@@ -4,7 +4,7 @@ import Hapi from '@hapi/hapi';
 import Jwt from '@hapi/jwt';
 
 // users
-import users from './api/users';
+import users from './api/users/index.js';
 import UsersService from './services/UsersService.js';
 import UsersValidator from './validator/users.js';
 
