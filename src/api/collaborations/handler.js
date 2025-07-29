@@ -1,5 +1,6 @@
 /* eslint-disable no-trailing-spaces */
-const ClientError = require('../../exceptions/ClientError');
+// const ClientError = require('../../exceptions/ClientError');
+import ClientError from '../../exceptions/ClientError';
  
 class CollaborationsHandler {
   constructor(service, validator) {
