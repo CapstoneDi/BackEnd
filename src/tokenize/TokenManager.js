@@ -1,6 +1,6 @@
 import 'dotenv/config';
 import Jwt from '@hapi/jwt';
-import InvariantError from '../exceptions/InvariantError';
+import InvariantError from '../exceptions/InvariantError.js';
 
 const TokenManager = {
   generateAccessToken: (payload) => Jwt.token.generate(payload, process.env.ACCESS_TOKEN_KEY),
