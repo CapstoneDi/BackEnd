@@ -31,8 +31,8 @@ const init = async () => {
   const collaborationsService = new CollaborationsService();
 
   const server = Hapi.server({
-    port: process.env.PORT || 5000,
-    host: process.env.HOST || '0.0.0.0',
+    port: process.env.PORT,
+    host: '0.0.0.0',
     routes: {
       cors: {
         origin: ['*'],
