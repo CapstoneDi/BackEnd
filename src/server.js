@@ -105,6 +105,10 @@ const init = async () => {
   console.log('🚀 Port yang akan digunakan:', process.env.PORT);
   await server.start();
   console.log(`Server is running on ${server.info.uri}`);
+
+  server.table().forEach((route) => {
+  console.log(`➡️  ${route.method.toUpperCase()} ${route.path}`);
+});
 };
 
 init();
