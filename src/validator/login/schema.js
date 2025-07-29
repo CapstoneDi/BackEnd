@@ -1,20 +1,14 @@
 import Joi from 'joi';
 
-const PostAuthenticationPayloadSchema = Joi.object({
+export const PostAuthenticationPayloadSchema = Joi.object({
   email: Joi.string().required(),
   password: Joi.string().required(),
 });
 
-const PutAuthenticationPayloadSchema = Joi.object({
+export const PutAuthenticationPayloadSchema = Joi.object({
   refreshToken: Joi.string().required(),
 });
 
-const DeleteAuthenticationPayloadSchema = Joi.object({
+export const DeleteAuthenticationPayloadSchema = Joi.object({
   refreshToken: Joi.string().required(),
 });
-
-export default {
-  PostAuthenticationPayloadSchema,
-  PutAuthenticationPayloadSchema,
-  DeleteAuthenticationPayloadSchema,
-};
