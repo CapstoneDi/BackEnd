@@ -5,6 +5,9 @@ const routes = (handler) => [
     handler: handler.postCollaborationsHandler,
     options: {
       auth: 'jagasehatapp_jwt',
+      cors: {
+        origin: ['*'],
+      }
     },
   },
 ];
