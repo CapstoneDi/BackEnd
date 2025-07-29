@@ -6,23 +6,23 @@ import Jwt from '@hapi/jwt';
 // users
 import users from './api/users/index.js';
 import UsersService from './services/UsersService.js';
-import UsersValidator from './validator/users.js';
+import UsersValidator from './validator/users/index.js';
 
 // authentications
-import login from './api/login';
+import login from './api/login/index.js';
 import AuthenticationsService from './services/AuthenticationsService.js';
 import TokenManager from './tokenize/TokenManager.js';
-import LoginValidator from './validator/login.js';
+import LoginValidator from './validator/login/index.js';
 
 // collaborations
-import collaborations from './api/collaborations';
+import collaborations from './api/collaborations/index.js';
 import CollaborationsService from './services/CollaborationsService.js';
-import CollaborationsValidator from './validator/collaborations.js';
+import CollaborationsValidator from './validator/collaborations/index.js';
 
 // dokter
-import dokter from './api/dokter';
+import dokter from './api/dokter/index.js';
 import DokterService from './services/DokterService.js';
-import DokterValidator from './validator/dokter.js';
+import DokterValidator from './validator/dokter/index.js';
 
 const init = async () => {
   const usersService = new UsersService();
