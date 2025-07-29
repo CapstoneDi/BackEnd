@@ -48,4 +48,4 @@ class CollaborationsHandler {
   }
 }
 
-module.exports = CollaborationsHandler;
+export default CollaborationsHandler;

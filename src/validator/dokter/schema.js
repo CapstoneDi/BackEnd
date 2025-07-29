@@ -8,4 +8,4 @@ const DokterPayloadSchema = Joi.object({
   alamat: Joi.string().required(),
 });
 
-module.exports = { DokterPayloadSchema };
+export default { DokterPayloadSchema };

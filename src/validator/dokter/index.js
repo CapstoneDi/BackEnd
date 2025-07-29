@@ -11,4 +11,4 @@ const DokterValidator = {
   },
 };
 
-module.exports = DokterValidator;
+export default DokterValidator;

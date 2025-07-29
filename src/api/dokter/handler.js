@@ -116,4 +116,4 @@ class DokterHandler {
   }
 }
 
-module.exports = DokterHandler;
+export default DokterHandler;

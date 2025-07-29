@@ -55,4 +55,4 @@ class LoginHandler {
   }
 }
 
-module.exports = LoginHandler;
+export default LoginHandler;

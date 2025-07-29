@@ -77,4 +77,4 @@ async deleteDokterById(id) {
 }
 }
 
-module.exports = DokterService;
+export default DokterService;

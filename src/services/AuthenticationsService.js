@@ -38,4 +38,4 @@ class AuthenticationsService {
   }
 }
 
-module.exports = AuthenticationsService;
+export default AuthenticationsService;

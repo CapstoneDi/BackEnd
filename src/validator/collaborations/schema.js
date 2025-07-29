@@ -4,4 +4,4 @@ const collaborationsPayloadSchema = Joi.object({
   doctorId: Joi.string().required(),
 });
 
-module.exports = { collaborationsPayloadSchema };
+export default { collaborationsPayloadSchema };

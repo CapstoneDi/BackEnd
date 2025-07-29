@@ -11,4 +11,4 @@ const UsersValidator = {
   },
 };
 
-module.exports = UsersValidator;
+export default UsersValidator;

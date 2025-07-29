@@ -26,4 +26,4 @@ const AuthenticationsValidator = {
   },
 };
 
-module.exports = AuthenticationsValidator;
+export default AuthenticationsValidator;

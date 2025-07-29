@@ -33,4 +33,4 @@ class CollaborationsService {
   }
 }
 
-module.exports = CollaborationsService;
+export default CollaborationsService;

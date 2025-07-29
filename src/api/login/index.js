@@ -1,7 +1,7 @@
 import LoginHandler from './handler.js';
 import routes from './routes.js';
 
-module.exports = {
+export default {
   name: 'login',
   version: '1.0.0',
   register: async (server, {

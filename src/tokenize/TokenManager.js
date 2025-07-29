@@ -20,4 +20,4 @@ const TokenManager = {
   },
 };
 
-module.exports = TokenManager;
+export default TokenManager;

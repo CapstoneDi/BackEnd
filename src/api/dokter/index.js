@@ -1,7 +1,7 @@
 import routes from './routes.js';
 import DokterHandler from './handler.js';
 
-module.exports = {
+export default  {
   name: 'dokter',
   register: async (server, { service, validator }) => {
     const handler = new DokterHandler(service, validator);
