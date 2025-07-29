@@ -102,18 +102,9 @@ const init = async () => {
     }
   ]);
 
+  console.log('🚀 Port yang akan digunakan:', process.env.PORT);
   await server.start();
   console.log(`Server is running on ${server.info.uri}`);
 };
 
 init();
-
-init().catch((err) => {
-  console.error('❌ Init failed:', err);
-  process.exit(1);
-});
-
-process.on('unhandledRejection', (err) => {
-  console.error('❌ Unhandled Rejection:', err);
-  process.exit(1);
-});
