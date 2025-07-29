@@ -1,6 +1,6 @@
 import { nanoid } from 'nanoid';
 import { Pool } from 'pg';
-import NotFoundError from '../exceptions/NotFoundError';
+import NotFoundError from '../exceptions/NotFoundError.js';
 
 class DokterService {
   constructor() {
