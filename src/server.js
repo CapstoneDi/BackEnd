@@ -30,6 +30,13 @@ const init = async () => {
   const dokterService = new DokterService();
   const collaborationsService = new CollaborationsService();
 
+  try {
+    const result = await usersService._pool.query('SELECT NOW()');
+    console.log('✅ Database connected at:', result.rows[0].now);
+  } catch (err) {
+    console.error('❌ Database connection failed:', err.message);
+  }
+
   const server = Hapi.server({
     port: process.env.PORT,
     host: '0.0.0.0',
