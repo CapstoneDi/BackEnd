@@ -107,3 +107,13 @@ const init = async () => {
 };
 
 init();
+
+init().catch((err) => {
+  console.error('❌ Init failed:', err);
+  process.exit(1);
+});
+
+process.on('unhandledRejection', (err) => {
+  console.error('❌ Unhandled Rejection:', err);
+  process.exit(1);
+});
