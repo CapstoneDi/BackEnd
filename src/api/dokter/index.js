@@ -1,5 +1,5 @@
-import routes from './routes';
-import DokterHandler from './handler';
+import routes from './routes.js';
+import DokterHandler from './handler.js';
 
 module.exports = {
   name: 'dokter',
