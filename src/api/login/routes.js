@@ -5,6 +5,7 @@ const routes = (handler) => [
     options: {
       auth: 'jagasehatapp_jwt',
       handler: handler.postLoginHandler,
+      cors: true, // ⬅️ ini yang penting!
     },
   },
 ];
