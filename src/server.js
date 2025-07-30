@@ -42,7 +42,7 @@ const init = async () => {
     host: '0.0.0.0',
     routes: {
       cors: {
-        origin: ['https://front-end-two-red-68.vercel.app'],
+        origin: ['https://front-ad15uyo86-harrys-projects-56b2de38.vercel.app'],
         additionalHeaders: ['cache-control', 'x-requested-with'],
       },
     },
