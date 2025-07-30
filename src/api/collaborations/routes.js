@@ -1,4 +1,4 @@
-import nameOrigin from './utils/nameOrigin.js';
+import nameOrigin from '../../utils/nameOrigin.js';
 
 const routes = (handler) => [
   {
