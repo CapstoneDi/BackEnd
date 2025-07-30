@@ -1,0 +1,1 @@
+export default nameOrigin = ['https://grup-capstonedb6-pg009.vercel.app'];

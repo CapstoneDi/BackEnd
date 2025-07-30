@@ -2,6 +2,7 @@ import 'dotenv/config';
 
 import Hapi from '@hapi/hapi';
 import Jwt from '@hapi/jwt';
+import nameOrigin from './utils/nameOrigin.js';
 
 // users
 import users from './api/users/index.js';
@@ -42,7 +43,7 @@ const init = async () => {
     host: '0.0.0.0',
     routes: {
       cors: {
-        origin: ['https://front-end-two-red-68.vercel.app/'],
+        origin: nameOrigin,
         additionalHeaders: ['cache-control', 'x-requested-with'],
       },
     },

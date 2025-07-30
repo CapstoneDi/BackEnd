@@ -1,3 +1,5 @@
+import nameOrigin from './utils/nameOrigin.js';
+
 const routes = (handler) => [
   {
     method: 'POST',
@@ -6,7 +8,7 @@ const routes = (handler) => [
     options: {
       auth: false,
       cors: {
-        origin: ['https://front-end-two-red-68.vercel.app/'],
+        origin: nameOrigin,
       },
     },
   },
@@ -17,7 +19,7 @@ const routes = (handler) => [
     options: {
       auth: 'jagasehatapp_jwt',
       cors: {
-        origin: ['https://front-end-two-red-68.vercel.app/'],
+        origin: nameOrigin,
       },
     },
   }
