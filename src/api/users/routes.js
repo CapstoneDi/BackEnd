@@ -6,7 +6,7 @@ const routes = (handler) => [
     options: {
       auth: false,
       cors: {
-        origin: ['https://front-ad15uyo86-harrys-projects-56b2de38.vercel.app'], // ⬅️ khusus frontend kamu
+        origin: ['https://front-ad15uyo86-harrys-projects-56b2de38.vercel.app'],
       },
     },
   },
@@ -16,7 +16,9 @@ const routes = (handler) => [
     handler: handler.getUserByIdHandler,
     options: {
       auth: 'jagasehatapp_jwt',
-      cors: true, // ⬅️ ini yang penting!
+      cors: {
+        origin: ['https://front-ad15uyo86-harrys-projects-56b2de38.vercel.app'],
+      },
     },
   }
 ];
