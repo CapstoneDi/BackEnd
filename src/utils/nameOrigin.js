@@ -1,1 +1,1 @@
-export default ['https://grup-capstonedb6-pg009.vercel.app'];
+export default ['*'];
