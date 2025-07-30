@@ -6,8 +6,9 @@ const routes = (handler) => [
     options: {
       auth: false,
       cors: {
-        origin: ['*'],
-      }
+        origin: (origin, request) => true, // izinkan semua origin
+        credentials: true, // jika frontend kirim cookie / header auth
+      },
     }
   }
 ];
