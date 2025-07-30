@@ -42,7 +42,7 @@ const init = async () => {
     host: '0.0.0.0',
     routes: {
       cors: {
-        origin: (origin) => true,
+        origin: ['*'], // gunakan wildcard biasa di sini
         credentials: true,
         additionalHeaders: ['cache-control', 'x-requested-with'],
       },
