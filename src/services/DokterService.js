@@ -46,6 +46,7 @@ class DokterService {
   }
 
   async getDokterById(id) {
+    console.log('ID dari dokter? ', id);
     const query = {
       text: 'SELECT * FROM doctors WHERE id = $1',
       values: [id],
@@ -55,7 +56,7 @@ class DokterService {
     return result.rows[0];
   }
 
-async updateDokterById(id, { nama, email = 'test@gmail.com', spesialis, no_wa, alamat }) {
+  async updateDokterById(id, { nama, email = 'test@gmail.com', spesialis, no_wa, alamat }) {
   const updatedAt = new Date().toISOString();
   const query = {
     text: `
