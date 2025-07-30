@@ -2,10 +2,12 @@ const routes = (handler) => [
   {
     method: 'POST',
     path: '/register',
+    handler: handler.postUserHandler,
     options: {
       auth: false,
-      cors: true, // ⬅️ ini yang penting!
-      handler: handler.postUserHandler,
+      cors: {
+        origin: ['https://front-end-two-red-68.vercel.app'], // ⬅️ khusus frontend kamu
+      },
     },
   },
   {

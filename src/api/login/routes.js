@@ -2,12 +2,14 @@ const routes = (handler) => [
   {
     method: 'POST',
     path: '/login',
+    handler: handler.postLoginHandler,
     options: {
-      auth: 'jagasehatapp_jwt',
-      handler: handler.postLoginHandler,
-      cors: true, // ⬅️ ini yang penting!
-    },
-  },
+      auth: false,
+      cors: {
+        origin: ['https://front-end-two-red-68.vercel.app'],
+      }
+    }
+  }
 ];
 
 export default routes;
