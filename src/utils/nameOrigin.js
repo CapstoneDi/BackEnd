@@ -1,1 +1,1 @@
-export default ['https://grup-capstonedb6-pg009-nykcy4qf7-harrys-projects-56b2de38.vercel.app/'];
+export default ['https://grup-capstonedb6-pg009.vercel.app'];
