@@ -6,7 +6,7 @@ const routes = (handler) => [
     options: {
       auth: 'jagasehatapp_jwt',
       cors: {
-        origin: ['https://front-ad15uyo86-harrys-projects-56b2de38.vercel.app'],
+        origin: ['https://front-end-two-red-68.vercel.app/'],
       },
     },
   },

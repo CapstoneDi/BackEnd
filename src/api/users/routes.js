@@ -6,10 +6,9 @@ const routes = (handler) => [
     options: {
       auth: false,
       cors: {
-        origin: (origin, request) => true, // izinkan semua origin
-        credentials: true, // jika frontend kirim cookie / header auth
+        origin: ['https://front-end-two-red-68.vercel.app/'],
       },
-    }
+    },
   },
   {
     method: 'GET',
@@ -18,11 +17,10 @@ const routes = (handler) => [
     options: {
       auth: 'jagasehatapp_jwt',
       cors: {
-        origin: (origin, request) => true, // izinkan semua origin
-        credentials: true, // jika frontend kirim cookie / header auth
+        origin: ['https://front-end-two-red-68.vercel.app/'],
       },
-    }
+    },
   }
 ];
 
-export default routes;
+export default routes; 

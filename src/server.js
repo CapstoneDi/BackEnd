@@ -42,8 +42,7 @@ const init = async () => {
     host: '0.0.0.0',
     routes: {
       cors: {
-        origin: ['*'], // gunakan wildcard biasa di sini
-        credentials: true,
+        origin: ['https://front-end-two-red-68.vercel.app/'],
         additionalHeaders: ['cache-control', 'x-requested-with'],
       },
     },
